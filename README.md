@@ -2,27 +2,22 @@
 
 Implemented by Stanislav Zhurylo
 
-== Preconditions
+## Preconditions
 
 Java 1.8 update 45,
 Maven2Eclipse plugin preinstalled on Eclipse
 
-== Import project
+## Import project
 
 Import project in Eclipse: Import > Maven > Existing Maven Projects
 
-== Build & Run application
+## Build & Run application
 
-There are 2 launch configurations available in eclipse:
-Use BuildProject to build using Maven.
-Use StartServer to execute as Standard Java Application
-
-== Entrypoint
-
-org.oecd.epms.SendMailService
-
-== SMTP configuration
+In order to run the application, perform mvn clean install:
+Run org.oecd.epms.SendMailService as Standard Java Application
+  
+## SMTP configuration
 
 SMTP configuration params are provided to verticle during deployment.
-Set your SMTP configuration and org.oecd.epms.SendMailService.
+Set your SMTP configuration in org.oecd.epms.SendMailService.
 
